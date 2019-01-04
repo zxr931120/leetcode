@@ -26,15 +26,6 @@ sol = Solution
 print(sol.maxSubArray(sol, nums))
 
 
-
-
-
-
-
-
-
-
-
 # O(n^2) solution, not acceptable because of time limit exceed
 # class Solution:
 #     def maxSubArray(self, nums):
