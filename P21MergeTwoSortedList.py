@@ -21,7 +21,7 @@ class Solution:
         if l2 is None:
             return l1
 
-        outlistlen = self.getListLength(self, l1) + self.getListLength(self, l2)
+        outlistlen = self.getListLength(l1) + self.getListLength(l2)
         print(outlistlen)
 
         for i in range(outlistlen):
@@ -98,9 +98,9 @@ l2.next.next = ListNode(2)
 l2.next.next.next = ListNode(5)
 l2.next.next.next.next = ListNode(7)
 
-sol = Solution
+sol = Solution()
 
-outl = sol.mergeTwoLists(sol, l1, l2)
-print(sol.getListLength(sol,outl))
+outl = sol.mergeTwoLists(l1, l2)
+print(sol.getListLength(outl))
 
-sol.printList(sol,outl)
+sol.printList(outl)

@@ -23,7 +23,7 @@ class Solution:
         return len(nums)
 
 
-sol = Solution
+sol = Solution()
 inList = []
-print(sol.removeDuplicates(sol, inList))
+print(sol.removeDuplicates(inList))
 print(inList)

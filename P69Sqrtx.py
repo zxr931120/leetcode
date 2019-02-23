@@ -10,7 +10,7 @@ class Solution:
         if x ** 2 == x:
             return x
 
-        return self.sqrtHalfSearch(self, 0, x, x)
+        return self.sqrtHalfSearch(0, x, x)
 
     def sqrtHalfSearch(self, start, end, num):
         if start + 1 == end:
@@ -19,8 +19,8 @@ class Solution:
         if half ** 2 == num:
             return half
         elif half ** 2 > num:
-            return self.sqrtHalfSearch(self, start, half, num)
+            return self.sqrtHalfSearch(start, half, num)
         else:
-            return self.sqrtHalfSearch(self, half, end, num)
+            return self.sqrtHalfSearch(half, end, num)
 
 #Accpeted

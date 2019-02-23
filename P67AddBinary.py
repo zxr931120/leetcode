@@ -44,5 +44,5 @@ class Solution:
 a = "10010"
 b = "111"
 
-sol = Solution
-print(sol.addBinary(sol, a, b))
+sol = Solution()
+print(sol.addBinary(a, b))

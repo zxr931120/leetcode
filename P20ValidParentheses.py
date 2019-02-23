@@ -36,7 +36,7 @@ class Solution:
 
         i = 0
         while len(s) > 0:
-            while not self.isRightBracket(self, s[i]):
+            while not self.isRightBracket(s[i]):
                 i += 1
                 if i == len(s):
                     print('No matching right bracket')
@@ -46,7 +46,7 @@ class Solution:
                 print('first is right')
                 return False
 
-            if not self.isMatch(self, s[i - 1], s[i]):
+            if not self.isMatch(s[i - 1], s[i]):
                 print('Brackets not matching')
                 return False
             else:
@@ -59,7 +59,7 @@ class Solution:
 
 
 ss = '(()[]{()[[]]})'
-Sol = Solution
-print(Sol.isValid(Sol, ss))
+Sol = Solution()
+print(Sol.isValid(ss))
 
 #accepted

@@ -23,7 +23,7 @@ class Solution:
         if target > nums[lenOfList - 1]:
             return lenOfList
 
-        inIndex = self.BinarySearch(self, 0, lenOfList - 1, nums, target)
+        inIndex = self.BinarySearch(0, lenOfList - 1, nums, target)
         print(inIndex)
         return inIndex
 
@@ -37,15 +37,15 @@ class Solution:
         if target == nums[halfIndex]:
             return halfIndex
         elif target > nums[halfIndex]:
-            return self.BinarySearch(self, halfIndex, endIndex, nums, target)
+            return self.BinarySearch(halfIndex, endIndex, nums, target)
         elif target < nums[halfIndex]:
-            return self.BinarySearch(self, startIndex, halfIndex, nums, target)
+            return self.BinarySearch(startIndex, halfIndex, nums, target)
 
 #Accepted, O(logn)
 
 nums = [1, 3, 5, 6]
 target = 4
 
-sol = Solution
-print(sol.searchInsert(sol, nums, target))
+sol = Solution()
+print(sol.searchInsert(nums, target))
 

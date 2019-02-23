@@ -21,5 +21,5 @@ class Solution:
 
 #accepted
 dig = [9, 9, 9]
-sol = Solution
-print(sol.plusOne(sol, dig))
+sol = Solution()
+print(sol.plusOne(dig))

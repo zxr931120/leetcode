@@ -33,8 +33,8 @@ class Solution:
         return result
 
 
-x = 123400000000000000000
-Sol = Solution
-print(Sol.reverse(Sol, x))
+x = 12340000
+Sol = Solution()
+print(Sol.reverse(x))
 
 #accepted
